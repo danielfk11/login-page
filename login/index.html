@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/login/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="/js/main.js"></script>
+    <script src="/js/login.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Login page by Danny</title>
 </head>
@@ -28,12 +30,12 @@
 
         <div class="dir">
             <h5>Login</h5>
-            <p>Nao possue uma conta ainda?<a href="#">Criar sua conta</a> em menos de 1 minuto!</p>
-            <div class="input">
-                <input type="text" placeholder="Username">
+            <p>Nao possue uma conta ainda?<a href="/cadastro/register.html">Criar sua conta</a> em menos de 1 minuto!</p>
+            <form class="input" method="post" action="/login/check">
+                <input    id="username"  type="text" placeholder="👤 Username">
                 <br>
-                <input type="password" placeholder="Password">
-            </div>
+                <input   id="password"   type="password" placeholder="🔒 Password">
+            </form>
 
             <br><br>
 
@@ -42,11 +44,11 @@
                     <input type="checkbox" name="item" checked/>
                     <span class="textcheckbox">Lembre-me</span>
                 </label>
-                <p>Esqueceu sua senha?</p>
+                <a href=""><span>Esqueceu sua senha?</span></a>
             </div>
 
             <br>
-            <button>Login</button>
+            <button  onclick="getInfo()">Login</button>
         </div>
 
     </div>

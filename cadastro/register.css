@@ -18,7 +18,7 @@ body {
     align-items: stretch;
     justify-content: space-between;
     box-shadow: 0 0 20px 6px  rgb(15, 15, 46);  
-    margin-top: 80px;
+    margin-top: 160px;
 }
 
 @media (max-width: 980px) {
@@ -82,13 +82,17 @@ body {
 }
 
 .box .dir {
-    padding: 40px;
+    padding: 80px;
     overflow: hidden;
 }
 @media (max-width: 980px) {
     .box .dir h5 {
         width: 100%;
     }
+}
+
+.box input p {
+    background-color: white;
 }
 
 .box .dir p {
@@ -114,6 +118,7 @@ body {
     border: none;
     outline: none;
     border-bottom: 2px solid whitesmoke;
+    margin-left: 2px;
 }
 
 .box .dir .senhaesqueceu {
@@ -122,16 +127,6 @@ body {
     align-items: center;
 
 }
-
-.box .dir .senhaesqueceu a span{
-   font-size: small;  
-   text-decoration: none;
-}
-
-.box .dir .senhaesqueceu a {
-    text-decoration: none;
- }
-
 
 .box .dir .senhaesqueceu input {
     margin: 0;
@@ -147,7 +142,7 @@ body {
     display: inline-block;
     border: 0;
     outline: 0;
-    margin-left: 150px;
+    margin-left: 15px;
     box-shadow: 0px 4px 20px 0px rgb(118, 118, 163);
     background-image: linear-gradient(135deg, #0f0f5a 10% #7b7bf1 100%);
 }
